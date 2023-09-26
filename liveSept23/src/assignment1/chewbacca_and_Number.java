@@ -31,7 +31,7 @@ public class chewbacca_and_Number {
 		long digit,mult=1,sum=0;
 		while(n>0) {
 			digit=n%10;
-			if(digit>4) {
+			if(n!=9 && digit>4) {
 				digit=9-digit;
 			}
 			digit=digit*mult;
@@ -39,6 +39,9 @@ public class chewbacca_and_Number {
 			n/=10;
 			mult*=10;
 		}
+		/*if(sum==0) {
+			sum+=(9*mult);
+		}*/
 		System.out.println(sum);
 			
 		
