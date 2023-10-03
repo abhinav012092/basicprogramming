@@ -31,19 +31,26 @@ public class Increasing_Decreasing_Sequence {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		int s,M=N,prev,max=Integer.MIN_VALUE,min=Integer.MAX_VALUE,cnt_max=0,cnt_min=0;
+		int prev =Integer.MAX_VALUE;
+		int phase = 0;//phase==0 dec phase
+		int ans=1;//true
+		
 		while(N>0) {
-			s=sc.nextInt();
-			if(s>max) {
-				max=s;
-				cnt_max++;
-			} else if(s<min) {
-				min=s;
-				cnt_min++;
-			}
 			N--;
+			
+			int curr = sc.nextInt();
+			if(phase==0 && curr>prev) {
+				phase=1;
+			}
+			if(phase==1 && curr<prev) {
+				ans=0;
+			}
+			if(curr==prev) {
+				ans=0;
+			}
+			prev=curr;
 		}
-		if((M==cnt_max) || (M==cnt_min)) {
+		if(ans==1) {
 			System.out.println("true");
 		} else {
 			System.out.println("false");

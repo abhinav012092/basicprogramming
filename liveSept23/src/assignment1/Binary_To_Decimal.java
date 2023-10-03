@@ -23,7 +23,7 @@ public class Binary_To_Decimal {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int bin = sc.nextInt();
-		int dec=0,mult=1,digit;;
+		int dec=0,mult=1,digit;
 		while(bin>0) {
 			digit=bin%10;
 			dec+=(digit*mult);

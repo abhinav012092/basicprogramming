@@ -27,17 +27,16 @@ public class Simple_input {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int sum=0,n;
-		
-		while(true) {
-			n = sc.nextInt();
-			sum+=n;
-			if(sum>0) {
-				System.out.println(n);
-			} else {
-				break;
-			}
-		}
+        //int n = sc.nextInt();
+        int sum=0,i;
+        while(true){
+            i = sc.nextInt();
+            sum+=i;
+            if(sum<0){
+                break;
+            }
+            System.out.println(i);
+        }
 	}
 
 }
