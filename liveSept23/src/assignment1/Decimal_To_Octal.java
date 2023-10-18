@@ -23,15 +23,15 @@ public class Decimal_To_Octal {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
 		
-		int divisor=8,R,Dividend=N,dec=0,mult=1;
+		int divisor=8,R,Dividend=N,oct=0,mult=1;
 		while(N>0) {
 			R=Dividend%8;
-			dec+=(R*mult);
+			oct+=(R*mult);
 			mult*=10;
 			N/=8;
 			Dividend=N;
 		}
-		System.out.println(dec);
+		System.out.println(oct);
 	}
 
 }
