@@ -1,5 +1,6 @@
 package assignment1;
 import java.util.*;
+import java.lang.*;
 
 public class Basic_Calculator {
 
@@ -8,6 +9,7 @@ public class Basic_Calculator {
 		Scanner sc = new Scanner(System.in);
 		char ch;
 		int N1,N2;
+		double o;
 		do {
 			ch = sc.next().charAt(0);
 			N1 = sc.nextInt();
@@ -15,16 +17,24 @@ public class Basic_Calculator {
 			
 			switch(ch) {
 			case '+':
-				System.out.println(N1+N2);
+				o=(N1+N2);
+				System.out.println(o);
 				break;
 			case '-':
-				System.out.println(N1-N2);
+				o=(N1-N2);
+				System.out.println(o);
 				break;
 			case '*':
-				System.out.println(N1*N2);
+				o=N1*N2;
+				System.out.println(o);
 				break;
 			case '/':
-				System.out.println(N1/N2);
+				o=N1/N2;
+				System.out.println(o);
+				break;
+			case '%':
+				o=(N1%N2);
+				System.out.println(o);
 				break;
 			case 'x':
 			case 'X':
