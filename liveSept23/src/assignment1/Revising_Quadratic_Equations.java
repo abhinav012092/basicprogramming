@@ -35,23 +35,21 @@ public class Revising_Quadratic_Equations {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
-		int R1,R2,QE;
-		
-		R1=(int) (-b+Math.sqrt((b*b)-4*a*c))/(2*a);
-		R2=(int) (-b-Math.sqrt((b*b)-4*a*c))/(2*a);
-		
-		if(R1==R2) {
-			System.out.println("Real and Equal");
-			System.out.println(R1+" "+R2);	
-		} else if((R1>0) && (R2>0)) {
+		int d = b * b - 4 * a * c;// Discriminant
+		int r1, r2;
+		if (d < 0)
+			System.out.println("Imaginary");
+		else if (d > 0) {
 			System.out.println("Real and Distinct");
-			if(R1<R2) {
-				System.out.println(R1+" "+R2);
-			} else {
-				System.out.println(R2+" "+R1);
-			}
+			r1 = ((-b - (int) (Math.sqrt(d))) / (2 * a));
+			r2 = ((-b + (int) (Math.sqrt(d))) / (2 * a));
+			System.out.print(r1 + " ");
+			System.out.println(r2);
 		} else {
-			System.out.println("Real and Imaginary");
+			System.out.println("Real and Equal");
+			r1 = (-b) / (2 * a);
+			System.out.print(r1+" ");
+			System.out.print(r1);
 		}
 	}
 

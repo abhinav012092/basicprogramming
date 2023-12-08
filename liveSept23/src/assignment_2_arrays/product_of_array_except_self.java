@@ -25,21 +25,27 @@ public class product_of_array_except_self {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
 		int[] arr = new int[N];
-		int prod=1,quo=0;
+		//int prod=1,quo=0;
 		for(int i=0;i<arr.length;i++) {
 			arr[i]=sc.nextInt();
+			//prod*=arr[i];
+		}
+		int prod=1;
+		int[] right = new int[N];
+		//prod=1;
+		for(int i=right.length-1;i>=0;i--) {
+			prod*=arr[i];
+			right[i]=prod;
+		}
+		prod=1;
+		int[] res = new int[N];
+		for(int i=0;i<res.length-1;i++) {
+			int lp = prod;
+			int rp=right[i+1];
+			res[i]=lp*rp;
 			prod*=arr[i];
 		}
-		int[] res = new int[N];
-		for(int i=0;i<res.length;i++) {
-			res[i]=prod;
-			quo=0;
-			while(res[i]>arr[i]) {
-				res[i]-=arr[i];
-				quo++;
-			}
-			res[i]=quo;
-		}
+		res[arr.length-1]=prod;
 		for(int ele : res) {
 			System.out.print(ele+" ");
 		}
