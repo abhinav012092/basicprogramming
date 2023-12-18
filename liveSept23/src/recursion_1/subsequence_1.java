@@ -5,7 +5,7 @@ public class subsequence_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		solve("abcd", "");
+		solve("abc", "");
 	}
 	public static void solve(String frens, String party) {
 		if(frens.isEmpty()) {

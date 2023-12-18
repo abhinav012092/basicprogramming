@@ -1,4 +1,4 @@
-package Lec_04;
+5package Lec_04;
 import java.util.*;
 
 public class pattern_number_ladder {

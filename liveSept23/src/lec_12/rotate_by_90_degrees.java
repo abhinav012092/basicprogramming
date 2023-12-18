@@ -25,8 +25,7 @@ public class rotate_by_90_degrees {
 		//reverse rows
 		for(int i=0;i<arr.length;i++) {
 			int li=0;
-			int ri=arr[i].length-1;
-			
+			int ri=arr[i].length-1;			
 			while(li<ri) {
 				int temp = arr[i][li];
 				arr[i][li]=arr[i][ri];
@@ -35,7 +34,7 @@ public class rotate_by_90_degrees {
 				ri--;
 			}
 		}
-		
+		//display
 		for(int i=0;i<arr.length;i++) {
 			for(int j=0;j<arr[0].length;j++) {
 				System.out.print(arr[i][j]+" ");

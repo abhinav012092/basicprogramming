@@ -8,7 +8,8 @@ public class maze {
 		//maze(0, 0, "");
 		int[][] maze= {{0,1,0,0},{0,0,0,0},{0,1,0,0},{0,0,1,0}};
 		boolean[][] visited = new boolean[maze.length][maze[0].length];
-		chal(0,0,"",maze,visited);
+		//chal(0,0,"",maze,visited);
+		maze(0,0,"");
 		
 	}
 	

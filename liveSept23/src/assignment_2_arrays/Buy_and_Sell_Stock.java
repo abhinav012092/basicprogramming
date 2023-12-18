@@ -46,5 +46,4 @@ public class Buy_and_Sell_Stock {
 		}
 		System.out.println(max_profit);
 	}
-
 }

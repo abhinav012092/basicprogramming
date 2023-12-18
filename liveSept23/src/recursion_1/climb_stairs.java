@@ -11,7 +11,7 @@ public class climb_stairs {
 	public static void climbStairs(int curr, String path, int dest) {
 		//BP:(0,path)
 		if(curr==dest) { //+ve BC
-			System.out.println(path);
+			System.out.print(path+" ");
 			return;
 		}
 		if(curr>dest) { //-ve BC

@@ -34,8 +34,6 @@ public class anybase_subtraction {
 			rv+=d*p;
 			p*=10;
 		}
-		
 		return rv;
 	}
-
 }

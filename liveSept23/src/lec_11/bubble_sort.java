@@ -43,7 +43,4 @@ public class bubble_sort {
 			System.out.println(Arrays.toString(arr));
 		}
 	}
-	
-	public static void insertion(int[] arr) {
-	for(int last_idx=1)
 }

@@ -30,5 +30,4 @@ public class kadenes_algo_max_subarray_sum {
 		}
 		System.out.println(max_sum);
 	}
-
 }
